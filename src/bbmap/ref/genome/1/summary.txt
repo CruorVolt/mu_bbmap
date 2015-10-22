@@ -1,0 +1,13 @@
+#Summary
+#Generated on	Tue Oct 20 10:00:03 MDT 2015
+#Version	5
+chroms	1
+bases	4954920
+defined	4938920
+undefined	16000
+contigs	1
+scaffolds	1
+interpad	300
+source	/Users/anders/mu_bbmap/src/bbmap/resources/NC_008253.fna
+bytes	5009545
+last modified	1425919868000
