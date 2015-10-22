@@ -46,7 +46,8 @@ public class AlignTest {
             "out=" + BASE_DIR + "sams/original.sam",
             "overwrite=t",
             "build=1",
-            "path=" + BASE_DIR + "src/bbmap"};
+            "path=" + BASE_DIR + "src/bbmap",
+            "threads=1"};
         BBMap.main(original_args);
 
         //Sort the reference SAM
@@ -73,7 +74,7 @@ public class AlignTest {
                 BASE_DIR + "src/bbmap/resources/e_coli_1000.fq", 
                 BASE_DIR + "altered_reads/e_coli_1000_removal.fq");
         } catch (Exception e) {
-            System.out.println("Problem invoking pre funcion");
+            System.err.println("Problem invoking pre funcion");
             e.printStackTrace();
         }
 
@@ -82,7 +83,8 @@ public class AlignTest {
             "out=" + BASE_DIR + "sams/modified.sam",
             "overwrite=t",
             "build=1",
-            "path=" + BASE_DIR + "src/bbmap"};
+            "path=" + BASE_DIR + "src/bbmap",
+            "threads=1"};
 
         //Create comparison SAM
         BBMap.main(modified_args);
@@ -120,7 +122,6 @@ public class AlignTest {
                         writer.println(reader.readLine());
                 }
             }
-            System.out.println("New reads file written");
             reader.close();
             writer.close();
         } catch(Exception e) {
@@ -153,9 +154,9 @@ public class AlignTest {
                 lineArr = line.split("\t");
                 index = map.get(lineArr[0]);
                 if (index == null) {
-                    System.out.println("Read " + lineArr[0] + " from reduced output not found in original mapping");
+                    System.err.println("Read " + lineArr[0] + " from reduced output not found in original mapping");
                 } else if (!index.equals(lineArr[3])) {
-                    System.out.println("Modified read " + lineArr[0] + " index of " + lineArr[3] + " does not match original index of " + index);
+                    System.err.println("Modified read " + lineArr[0] + " index of " + lineArr[3] + " does not match original index of " + index);
                 }
             }
         } catch (Exception e) {
