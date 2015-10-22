@@ -1,4 +1,6 @@
 import java.lang.Runtime;
+import java.lang.reflect.Method;
+import java.lang.reflect.InvocationTargetException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,16 +25,30 @@ import align2.BBMap;
 
 public class AlignTest {
 
-    static final String CLEAN_BBMAP = "/Users/anders/mu_bbmap/src/bbmap/current ";
+    static final String BASE_DIR = "/Users/anders/mu_bbmap/";
 
-    static final String[] GOLD_ARGS = {"in=/Users/anders/mu_bbmap/src/bbmap/resources/e_coli_1000.fq",
-            "out=/Users/anders/mu_bbmap/sams/gold.sam",
+    static final String CLEAN_BBMAP = BASE_DIR + "src/bbmap/current ";
+
+    static final String[] GOLD_ARGS = {"in=" + BASE_DIR + "src/bbmap/resources/e_coli_1000.fq",
+            "out=" + BASE_DIR + "sams/gold.sam",
             "overwrite=t",
             "build=1",
-            "path=/Users/anders/mu_bbmap/src/bbmap"};
+            "path=" + BASE_DIR + "src/bbmap"};
 
     @Test
-    public static void 
+    public void test_removal_of_reads() {
+        Boolean result = false;
+        try {
+            Class thisClass = AlignTest.class;
+            result = test_mr(
+                thisClass.getMethod("removal_of_reads_pre", String.class, String.class), 
+                thisClass.getMethod("removal_of_reads_post", String.class, String.class));
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } finally {
+            assertTrue("Removal of Reads Failure!", result);
+        }
+    }
 
     @BeforeClass
     public static void setUpClass() {
@@ -40,7 +56,7 @@ public class AlignTest {
 
         try {
             //Ensure gold standard version exists
-            String ref_dir = "/Users/anders/mu_bbmap/sams";
+            String ref_dir = BASE_DIR + "sams";
             if (!(new File(ref_dir + "/gold.sam").exists())) {
                 throw new FileNotFoundException();
             }
@@ -64,28 +80,36 @@ public class AlignTest {
         //remove all SAM files
     }
 
-    public void test_mr(Method mr_pre, Method mr_post) {
+    public static Boolean test_mr(Method mr_pre, Method mr_post) {
 
         System.out.println("Test function>>");
 
         //apply mutation - make new input file
-        mr_pre(
-            "/Users/anders/mu_bbmap/src/bbmap/resources/e_coli_1000.fq", 
-            "/Users/anders/mu_bbmap/altered_reads/e_coli_1000_removal.fq");
+        try {
+            mr_pre.invoke(null,
+                BASE_DIR + "src/bbmap/resources/e_coli_1000.fq", 
+                BASE_DIR + "altered_reads/e_coli_1000_removal.fq");
+        } catch(IllegalAccessException e) {
+            System.out.println("Problem invoking pre funcion");
+            e.printStackTrace();
+        } catch(InvocationTargetException e) {
+            System.out.println("Problem invoking pre funcion");
+            e.printStackTrace();
+        }
 
         String[] original_args = {
-            "in=/Users/anders/mu_bbmap/src/bbmap/resources/e_coli_1000.fq",
-            "out=/Users/anders/mu_bbmap/sams/original.sam",
+            "in=" + BASE_DIR + "src/bbmap/resources/e_coli_1000.fq",
+            "out=" + BASE_DIR + "sams/original.sam",
             "overwrite=t",
             "build=1",
-            "path=/Users/anders/mu_bbmap/src/bbmap"};
+            "path=" + BASE_DIR + "src/bbmap"};
 
         String[] modified_args = {
-            "in=/Users/anders/mu_bbmap/altered_reads/e_coli_1000_removal.fq",
-            "out=/Users/anders/mu_bbmap/sams/modified.sam",
+            "in=" + BASE_DIR + "altered_reads/e_coli_1000_removal.fq",
+            "out=" + BASE_DIR + "sams/modified.sam",
             "overwrite=t",
             "build=1",
-            "path=/Users/anders/mu_bbmap/src/bbmap"};
+            "path=" + BASE_DIR + "src/bbmap"};
 
         //make alginments to compare
         System.out.println("creating SAM from original");
@@ -93,11 +117,11 @@ public class AlignTest {
         System.out.println("creating SAM from modified");
         BBMap.main(modified_args);
 
-        String original = "/Users/anders/mu_bbmap/sams/original.sam";
-        String original_sorted = "/Users/anders/mu_bbmap/sams/original_sorted.sam";
+        String original = BASE_DIR + "sams/original.sam";
+        String original_sorted = BASE_DIR + "sams/original_sorted.sam";
 
-        String modified = "/Users/anders/mu_bbmap/sams/modified.sam";
-        String modified_sorted = "/Users/anders/mu_bbmap/sams/modified_sorted.sam";
+        String modified = BASE_DIR + "sams/modified.sam";
+        String modified_sorted = BASE_DIR + "sams/modified_sorted.sam";
 
         String[] original_sort_args = {"I="+original, "O="+original_sorted, "SO=queryname"};
         String[] modified_sort_args = {"I="+modified, "O="+modified_sorted, "SO=queryname"};
@@ -105,11 +129,20 @@ public class AlignTest {
         System.out.println("Sorting SAMs");
         new SortSam().instanceMain(original_sort_args);
         new SortSam().instanceMain(modified_sort_args);
+    
+        Boolean result = false;
+        try {
+            result = (Boolean)mr_post.invoke(null, original_sorted, modified_sorted);
+        } catch(IllegalAccessException e) {
+            e.printStackTrace();
+        } catch(InvocationTargetException e) {
+            e.printStackTrace();
+        } finally {}
 
-        assertTrue("Removal of Reads Failure!", mr_post(original_sorted, modified_sorted));
+        return result;
     }
 
-    public void removal_of_reads_pre(String input_filename, String output_filename) {
+    public static void removal_of_reads_pre(String input_filename, String output_filename) {
         System.out.println("Modifying input: " + input_filename);
         Random rand = new Random();
         try {    
@@ -133,7 +166,7 @@ public class AlignTest {
         }
     }
 
-    public boolean removal_of_reads_post(String original_sam, String output_sam) {
+    public static boolean removal_of_reads_post(String original_sam, String output_sam) {
         try {
             BufferedReader reader_original = new BufferedReader(new FileReader(original_sam));
             BufferedReader reader_modified = new BufferedReader(new FileReader(output_sam));
