@@ -1,6 +1,6 @@
-muJava
+BBMAP Mutations
 ======
 
-Mutation system for Java programs, including OO mutation operators.
+MuJava workspace for BBMAP metamorphic testing experiment.
 
-Please see muJava's homepage for detail: http://cs.gmu.edu/~offutt/mujava
+Clean BBMAP source is in src/bbmap/current
