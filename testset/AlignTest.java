@@ -35,24 +35,15 @@ public class AlignTest {
             "build=1",
             "path=" + BASE_DIR + "src/bbmap"};
 
+
     @Test
     public void test_removal_of_reads() {
-        Boolean result = false;
-        try {
-            Class thisClass = AlignTest.class;
-            result = test_mr(
-                thisClass.getMethod("removal_of_reads_pre", String.class, String.class), 
-                thisClass.getMethod("removal_of_reads_post", String.class, String.class));
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } finally {
-            assertTrue("Removal of Reads Failure!", result);
-        }
+        assertTrue("Removal of Reads Failure!", 
+            test_mr("removal_of_reads_pre", "removal_of_reads_post"));
     }
 
     @BeforeClass
     public static void setUpClass() {
-        System.out.println("BeforeClass function>>");
 
         try {
             //Ensure gold standard version exists
@@ -64,35 +55,30 @@ public class AlignTest {
             String gold = ref_dir + "/gold.sam";
             String gold_sorted = ref_dir + "/gold_sorted.sam";
             String[] gold_args = {"I="+gold, "O="+gold_sorted, "SO=queryname"};
-            System.out.println("Sorting gold");
             new SortSam().instanceMain(gold_args);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-
     }
 
     @AfterClass
     public static void tearDownClass() {
-        System.out.println("AfterClass function>>");
         //remove all SAM files
     }
 
-    public static Boolean test_mr(Method mr_pre, Method mr_post) {
+    public static Boolean test_mr(String mr_pre, String mr_post) {
 
-        System.out.println("Test function>>");
-
-        //apply mutation - make new input file
+        Method mr_pre_method, mr_post_method;
+        Class thisClass = AlignTest.class;
         try {
-            mr_pre.invoke(null,
+            mr_pre_method = thisClass.getMethod(mr_pre, String.class, String.class); 
+
+            //apply mutation - make new input file
+            mr_pre_method.invoke(null,
                 BASE_DIR + "src/bbmap/resources/e_coli_1000.fq", 
                 BASE_DIR + "altered_reads/e_coli_1000_removal.fq");
-        } catch(IllegalAccessException e) {
-            System.out.println("Problem invoking pre funcion");
-            e.printStackTrace();
-        } catch(InvocationTargetException e) {
+        } catch (Exception e) {
             System.out.println("Problem invoking pre funcion");
             e.printStackTrace();
         }
@@ -112,9 +98,7 @@ public class AlignTest {
             "path=" + BASE_DIR + "src/bbmap"};
 
         //make alginments to compare
-        System.out.println("creating SAM from original");
         BBMap.main(original_args);
-        System.out.println("creating SAM from modified");
         BBMap.main(modified_args);
 
         String original = BASE_DIR + "sams/original.sam";
@@ -126,24 +110,20 @@ public class AlignTest {
         String[] original_sort_args = {"I="+original, "O="+original_sorted, "SO=queryname"};
         String[] modified_sort_args = {"I="+modified, "O="+modified_sorted, "SO=queryname"};
 
-        System.out.println("Sorting SAMs");
         new SortSam().instanceMain(original_sort_args);
         new SortSam().instanceMain(modified_sort_args);
     
         Boolean result = false;
         try {
-            result = (Boolean)mr_post.invoke(null, original_sorted, modified_sorted);
-        } catch(IllegalAccessException e) {
+            mr_post_method = thisClass.getMethod(mr_post, String.class, String.class);
+            result = (Boolean)mr_post_method.invoke(null, original_sorted, modified_sorted);
+        } catch(Exception e) {
             e.printStackTrace();
-        } catch(InvocationTargetException e) {
-            e.printStackTrace();
-        } finally {}
-
+        }
         return result;
     }
 
     public static void removal_of_reads_pre(String input_filename, String output_filename) {
-        System.out.println("Modifying input: " + input_filename);
         Random rand = new Random();
         try {    
             PrintWriter writer = new PrintWriter(output_filename);
