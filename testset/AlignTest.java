@@ -9,7 +9,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.HashMap;
 
@@ -26,15 +25,12 @@ import align2.BBMap;
 public class AlignTest {
 
     static final String BASE_DIR = "/Users/anders/mu_bbmap/";
-
     static final String CLEAN_BBMAP = BASE_DIR + "src/bbmap/current ";
-
     static final String[] GOLD_ARGS = {"in=" + BASE_DIR + "src/bbmap/resources/e_coli_1000.fq",
             "out=" + BASE_DIR + "sams/gold.sam",
             "overwrite=t",
             "build=1",
             "path=" + BASE_DIR + "src/bbmap"};
-
 
     @Test
     public void test_removal_of_reads() {
@@ -44,22 +40,20 @@ public class AlignTest {
 
     @BeforeClass
     public static void setUpClass() {
+        //Create this mutant's reference input
+        String[] original_args = {
+            "in=" + BASE_DIR + "src/bbmap/resources/e_coli_1000.fq",
+            "out=" + BASE_DIR + "sams/original.sam",
+            "overwrite=t",
+            "build=1",
+            "path=" + BASE_DIR + "src/bbmap"};
+        BBMap.main(original_args);
 
-        try {
-            //Ensure gold standard version exists
-            String ref_dir = BASE_DIR + "sams";
-            if (!(new File(ref_dir + "/gold.sam").exists())) {
-                throw new FileNotFoundException();
-            }
-            //Sort the reference file
-            String gold = ref_dir + "/gold.sam";
-            String gold_sorted = ref_dir + "/gold_sorted.sam";
-            String[] gold_args = {"I="+gold, "O="+gold_sorted, "SO=queryname"};
-            new SortSam().instanceMain(gold_args);
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        //Sort the reference SAM
+        String original = BASE_DIR + "sams/original.sam";
+        String original_sorted = BASE_DIR + "sams/original_sorted.sam";
+        String[] original_sort_args = {"I="+original, "O="+original_sorted, "SO=queryname"};
+        new SortSam().instanceMain(original_sort_args);
     }
 
     @AfterClass
@@ -83,13 +77,6 @@ public class AlignTest {
             e.printStackTrace();
         }
 
-        String[] original_args = {
-            "in=" + BASE_DIR + "src/bbmap/resources/e_coli_1000.fq",
-            "out=" + BASE_DIR + "sams/original.sam",
-            "overwrite=t",
-            "build=1",
-            "path=" + BASE_DIR + "src/bbmap"};
-
         String[] modified_args = {
             "in=" + BASE_DIR + "altered_reads/e_coli_1000_removal.fq",
             "out=" + BASE_DIR + "sams/modified.sam",
@@ -97,24 +84,19 @@ public class AlignTest {
             "build=1",
             "path=" + BASE_DIR + "src/bbmap"};
 
-        //make alginments to compare
-        BBMap.main(original_args);
+        //Create comparison SAM
         BBMap.main(modified_args);
 
-        String original = BASE_DIR + "sams/original.sam";
-        String original_sorted = BASE_DIR + "sams/original_sorted.sam";
-
+        //Sort the comparison SAM
         String modified = BASE_DIR + "sams/modified.sam";
         String modified_sorted = BASE_DIR + "sams/modified_sorted.sam";
-
-        String[] original_sort_args = {"I="+original, "O="+original_sorted, "SO=queryname"};
         String[] modified_sort_args = {"I="+modified, "O="+modified_sorted, "SO=queryname"};
-
-        new SortSam().instanceMain(original_sort_args);
         new SortSam().instanceMain(modified_sort_args);
     
+        //Perform the relation test
         Boolean result = false;
         try {
+            String original_sorted = BASE_DIR + "sams/original_sorted.sam";
             mr_post_method = thisClass.getMethod(mr_post, String.class, String.class);
             result = (Boolean)mr_post_method.invoke(null, original_sorted, modified_sorted);
         } catch(Exception e) {
