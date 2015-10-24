@@ -11,6 +11,8 @@ import java.io.PrintWriter;
 
 import java.util.Random;
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.junit.Test;
 import org.junit.BeforeClass;
@@ -36,6 +38,18 @@ public class AlignTest {
     public void test_removal_of_reads() {
         assertTrue("Removal of Reads Failure!", 
             test_mr("removal_of_reads_pre", "removal_of_reads_post"));
+    }
+
+    @Test
+    public void test_addition_of_reads() {
+        assertTrue("Addition of Reads Failure!", 
+            test_mr("addition_of_reads_pre", "addition_of_reads_post"));
+    }
+
+    @Test
+    public void test_unmapped_reads() {
+        assertTrue("Unmapped Reads Failure!", 
+            test_mr("unmapped_reads_pre", "unmapped_reads_post"));
     }
 
     @BeforeClass
@@ -72,14 +86,14 @@ public class AlignTest {
             //apply mutation - make new input file
             mr_pre_method.invoke(null,
                 BASE_DIR + "src/bbmap/resources/e_coli_1000.fq", 
-                BASE_DIR + "altered_reads/e_coli_1000_removal.fq");
+                BASE_DIR + "altered_reads/e_coli_1000_altered.fq");
         } catch (Exception e) {
             System.err.println("Problem invoking pre funcion");
             e.printStackTrace();
         }
 
         String[] modified_args = {
-            "in=" + BASE_DIR + "altered_reads/e_coli_1000_removal.fq",
+            "in=" + BASE_DIR + "altered_reads/e_coli_1000_altered.fq",
             "out=" + BASE_DIR + "sams/modified.sam",
             "overwrite=t",
             "build=1",
@@ -111,7 +125,8 @@ public class AlignTest {
         Random rand = new Random();
         try {    
             PrintWriter writer = new PrintWriter(output_filename);
-            BufferedReader reader = new BufferedReader(new FileReader(input_filename));
+            FileReader file_reader = new FileReader(input_filename);
+            BufferedReader reader = new BufferedReader(file_reader);
             while (true) {
                 String line = reader.readLine();
                 if (line == null) { break; }
@@ -123,6 +138,7 @@ public class AlignTest {
                 }
             }
             reader.close();
+            file_reader.close();
             writer.close();
         } catch(Exception e) {
             e.printStackTrace();
@@ -130,39 +146,163 @@ public class AlignTest {
     }
 
     public static boolean removal_of_reads_post(String original_sam, String output_sam) {
+        boolean pass = true;
         try {
-            BufferedReader reader_original = new BufferedReader(new FileReader(original_sam));
-            BufferedReader reader_modified = new BufferedReader(new FileReader(output_sam));
-            for (int i = 1; i <= 3; i++) { //headers
-                reader_original.readLine();
-                reader_modified.readLine();
-            }
 
-            HashMap<String, String> map = new HashMap<String, String>();
-            String line;
-            String[] lineArr;
-
-            //build map for original
-            while ((line = reader_original.readLine()) != null) {
-                lineArr = line.split("\t");
-                map.put(lineArr[0], lineArr[3]);
-            }
+            HashMap<String, String> original_map = build_sam_mapping(original_sam);
+            HashMap<String, String> modified_map = build_sam_mapping(output_sam);
 
             //compare modified SAM
-            String index;
-            while ((line = reader_modified.readLine()) != null) {
-                lineArr = line.split("\t");
-                index = map.get(lineArr[0]);
-                if (index == null) {
-                    System.err.println("Read " + lineArr[0] + " from reduced output not found in original mapping");
-                } else if (!index.equals(lineArr[3])) {
-                    System.err.println("Modified read " + lineArr[0] + " index of " + lineArr[3] + " does not match original index of " + index);
+            for (Object key : modified_map.keySet().toArray()) {
+                String original = original_map.get((String)key);
+                if ( (original == null) || (!original.equals(modified_map.get((String)key))) ) {
+                    System.out.println("Key " + key + " is " + modified_map.get((String)key) + " in modified, was " + original + " in original");
+                    pass = false;
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return true;
+        return pass;
+    }
+
+    public static void unmapped_reads_pre(String input_filename, String output_filename) {
+        //scan the fastq file and output the unmapped reads
+
+        String original_sam = BASE_DIR + "sams/original_sorted.sam";
+
+        try {    
+            PrintWriter writer = new PrintWriter(output_filename);
+
+            FileReader sam_file_reader = new FileReader(original_sam);
+            BufferedReader sam_reader = new BufferedReader(sam_file_reader);
+
+            FileReader fq_file_reader = new FileReader(input_filename);
+            BufferedReader fq_reader = new BufferedReader(fq_file_reader);
+
+            //scan sam file
+            String line;
+            String[] lineParts;
+            int index;
+            ArrayList<String> unmappedList = new ArrayList<String>();
+            sam_reader.readLine(); sam_reader.readLine(); sam_reader.readLine();
+            while ((line = sam_reader.readLine()) != null) {
+                lineParts = line.split("\t");
+                index = Integer.valueOf(lineParts[3]);
+                if (index == 0) {
+                    unmappedList.add(lineParts[0]);
+                }
+            }
+            sam_reader.close();
+            sam_file_reader.close();
+
+            //scan fq file to find matches and output
+            while ((line = fq_reader.readLine()) != null) {
+                if (line.charAt(0) == '@') { //this line is a read
+                    if (unmappedList.contains(line.substring(1))) { //this read was unmapped - add it to the new fastq file
+                        writer.println(line); //label
+                        writer.println(fq_reader.readLine()); //read head
+                        writer.println(fq_reader.readLine()); //read ext
+                        writer.println(fq_reader.readLine()); //read tail
+                    }
+                }
+            }
+            writer.close();
+            fq_reader.close();
+            fq_file_reader.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //TODO
+    public static boolean unmapped_reads_post(String original_sam, String output_sam) {
+        boolean pass = true;
+        try {
+            HashMap<String, String> modified_map = build_sam_mapping(output_sam);
+
+            //modified sam should have no mappings
+            for (String val : modified_map.values()) {
+                if (!Integer.valueOf(val).equals(0)) {
+                    pass = false;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return pass;
+    }
+
+    public static void addition_of_reads_pre(String input_filename, String output_filename) {
+        try {    
+            PrintWriter writer = new PrintWriter(output_filename);
+            FileReader file_reader = new FileReader(input_filename);
+            BufferedReader reader = new BufferedReader(file_reader);
+            String readName, readHead, readExt, readTail;
+            while (true) {
+                String line = reader.readLine();
+                if (line == null) { break; }
+                if (line.charAt(0) == '@') {
+                
+                        //write original version of read
+                        readName = line;
+                        writer.println(line);
+                        readHead = reader.readLine();
+                        writer.println(readHead);
+                        readExt = reader.readLine();
+                        writer.println(readExt);
+                        readTail = reader.readLine();
+                        writer.println(readTail);
+        
+                        //write this read's duplicate
+                        writer.println(readName + "v2");
+                        writer.println(readHead);
+                        writer.println(readExt);
+                        writer.println(readTail);
+                }
+            }
+            reader.close();
+            file_reader.close();
+            writer.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean addition_of_reads_post(String original_sam, String output_sam) {
+        boolean pass = true;
+        HashMap<String, String> original_map = build_sam_mapping(original_sam);
+        HashMap<String, String> modified_map = build_sam_mapping(output_sam);
+        for (String key: original_map.keySet()) {
+            if (!modified_map.containsKey(key) ||
+                !modified_map.get(key).equals(original_map.get(key)) ||
+                !modified_map.get(key).equals(modified_map.get(key + "v2"))) {
+                
+                pass = false;
+            }
+        }
+        return pass;
+    }
+
+    public static HashMap<String, String> build_sam_mapping(String filename) {
+        HashMap<String, String> map = new HashMap<String, String>();
+        try {
+            BufferedReader reader= new BufferedReader(new FileReader(filename));
+            for (int i = 1; i <= 3; i++) { //headers
+                reader.readLine();
+            }
+            String line;
+            String[] lineArr;
+            //build map for original
+            while ((line = reader.readLine()) != null) {
+                lineArr = line.split("\t");
+                map.put(lineArr[0], lineArr[3]);
+            }
+            reader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return map;
     }
 
     public static void build_reference_alignment() {
