@@ -21,7 +21,6 @@ import org.junit.AfterClass;
 import static org.junit.Assert.*;
 import static org.hamcrest.Matchers.equalTo;
 
-import picard.sam.*;
 import align2.BBMap;
 
 public class AlignTest {
@@ -52,6 +51,18 @@ public class AlignTest {
             test_mr("unmapped_reads_pre", "unmapped_reads_post"));
     }
 
+    @Test
+    public void test_mapped_reads() {
+        assertTrue("Mapped Reads Failure!", 
+            test_mr("mapped_reads_pre", "mapped_reads_post"));
+    }
+
+    @Test
+    public void test_permutation_of_reads() {
+        assertTrue("Permutation of Reads Failure!", 
+            test_mr("permutation_of_reads_pre", "permutation_of_reads_post"));
+    }
+
     @BeforeClass
     public static void setUpClass() {
         //Create this mutant's reference input
@@ -64,11 +75,6 @@ public class AlignTest {
             "threads=1"};
         BBMap.main(original_args);
 
-        //Sort the reference SAM
-        String original = BASE_DIR + "sams/original.sam";
-        String original_sorted = BASE_DIR + "sams/original_sorted.sam";
-        String[] original_sort_args = {"I="+original, "O="+original_sorted, "SO=queryname"};
-        new SortSam().instanceMain(original_sort_args);
     }
 
     @AfterClass
@@ -102,19 +108,14 @@ public class AlignTest {
 
         //Create comparison SAM
         BBMap.main(modified_args);
-
-        //Sort the comparison SAM
-        String modified = BASE_DIR + "sams/modified.sam";
-        String modified_sorted = BASE_DIR + "sams/modified_sorted.sam";
-        String[] modified_sort_args = {"I="+modified, "O="+modified_sorted, "SO=queryname"};
-        new SortSam().instanceMain(modified_sort_args);
     
         //Perform the relation test
         Boolean result = false;
         try {
-            String original_sorted = BASE_DIR + "sams/original_sorted.sam";
+            String original = BASE_DIR + "sams/original.sam";
+            String modified = BASE_DIR + "sams/modified.sam";
             mr_post_method = thisClass.getMethod(mr_post, String.class, String.class);
-            result = (Boolean)mr_post_method.invoke(null, original_sorted, modified_sorted);
+            result = (Boolean)mr_post_method.invoke(null, original, modified);
         } catch(Exception e) {
             e.printStackTrace();
         }
@@ -166,10 +167,76 @@ public class AlignTest {
         return pass;
     }
 
+    public static void mapped_reads_pre(String input_filename, String output_filename) {
+        //scan the fastq file and output the unmapped reads
+
+        String original_sam = BASE_DIR + "sams/original.sam";
+
+        try {    
+            PrintWriter writer = new PrintWriter(output_filename);
+
+            FileReader sam_file_reader = new FileReader(original_sam);
+            BufferedReader sam_reader = new BufferedReader(sam_file_reader);
+
+            FileReader fq_file_reader = new FileReader(input_filename);
+            BufferedReader fq_reader = new BufferedReader(fq_file_reader);
+
+            //scan sam file
+            String line;
+            String[] lineParts;
+            int index;
+            ArrayList<String> mappedList = new ArrayList<String>();
+            sam_reader.readLine(); sam_reader.readLine(); sam_reader.readLine();
+            while ((line = sam_reader.readLine()) != null) {
+                lineParts = line.split("\t");
+                index = Integer.valueOf(lineParts[3]);
+                if (index != 0) {
+                    mappedList.add(lineParts[0]);
+                }
+            }
+            sam_reader.close();
+            sam_file_reader.close();
+
+            //scan fq file to find matches and output
+            while ((line = fq_reader.readLine()) != null) {
+                if (line.charAt(0) == '@') { //this line is a read
+                    if (mappedList.contains(line.substring(1))) { //this read was mapped - add it to the new fastq file
+                        writer.println(line); //label
+                        writer.println(fq_reader.readLine()); //read head
+                        writer.println(fq_reader.readLine()); //read ext
+                        writer.println(fq_reader.readLine()); //read tail
+                    }
+                }
+            }
+            writer.close();
+            fq_reader.close();
+            fq_file_reader.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean mapped_reads_post(String original_sam, String output_sam) {
+        boolean pass = true;
+        try {
+            HashMap<String, String> modified_map = build_sam_mapping(output_sam);
+
+            //modified sam should have no mappings
+            for (String val : modified_map.values()) {
+                if (Integer.valueOf(val).equals(0)) {
+                    pass = false;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return pass;
+    }
+
     public static void unmapped_reads_pre(String input_filename, String output_filename) {
         //scan the fastq file and output the unmapped reads
 
-        String original_sam = BASE_DIR + "sams/original_sorted.sam";
+        String original_sam = BASE_DIR + "sams/original.sam";
 
         try {    
             PrintWriter writer = new PrintWriter(output_filename);
@@ -215,7 +282,6 @@ public class AlignTest {
         }
     }
 
-    //TODO
     public static boolean unmapped_reads_post(String original_sam, String output_sam) {
         boolean pass = true;
         try {
@@ -278,6 +344,75 @@ public class AlignTest {
                 !modified_map.get(key).equals(original_map.get(key)) ||
                 !modified_map.get(key).equals(modified_map.get(key + "v2"))) {
                 
+                pass = false;
+            }
+        }
+        return pass;
+    }
+
+    public static void permutation_of_reads_pre(String input_filename, String output_filename) {
+
+        HashMap<String, String[]> map = new HashMap<String, String[]>();
+
+        try {    
+            PrintWriter writer = new PrintWriter(output_filename);
+            FileReader file_reader = new FileReader(input_filename);
+            BufferedReader reader = new BufferedReader(file_reader);
+
+            String line;
+            String[] fullRead;
+            while( (line = reader.readLine()) != null ) {
+                if (line.charAt(0) == '@') { //this line starts a read
+                    fullRead = new String[4];
+                    fullRead[0] = line.substring(1);
+                    fullRead[1] = reader.readLine();
+                    fullRead[2] = reader.readLine();
+                    fullRead[3] = reader.readLine();
+                    map.put(line.substring(1), fullRead);
+                }
+            }
+            
+            //shuffle keys
+            int index;
+            Random random = new Random();
+            String temp;
+            String[] keys =map.keySet().toArray(new String[0]);
+            for (int i = keys.length - 1; i > 0; i--) {
+                index = random.nextInt(i + 1);
+                temp = keys[index];
+                keys[index] = keys[i];
+                keys[i] = temp;
+            }
+
+            //write new fastq file using new ordering
+            for (String key : keys) {
+                fullRead = map.get(key);
+                writer.println(fullRead[0]);
+                writer.println(fullRead[1]);
+                writer.println(fullRead[2]);
+                writer.println(fullRead[3]);
+            }
+
+            reader.close();
+            file_reader.close();
+            writer.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean permutation_of_reads_post(String original_sam, String output_sam) {
+        boolean pass = true;
+        HashMap<String, String> original_map = build_sam_mapping(original_sam);
+        HashMap<String, String> modified_map = build_sam_mapping(output_sam);
+        
+        //mappings should all be the same
+        if (original_map.size() != modified_map.size()) {
+            pass = false;
+        }
+
+        for (String key: original_map.keySet()) {
+            if (!original_map.get(key).equals(modified_map.get(key))) {    
                 pass = false;
             }
         }
