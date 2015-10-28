@@ -3,6 +3,7 @@
 *.o
 *.swp
 *.DS_STORE
+*.log
 altered_reads/
 classes/
 result/

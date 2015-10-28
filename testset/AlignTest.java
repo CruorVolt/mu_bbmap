@@ -8,6 +8,9 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.FileOutputStream;
+
+import java.nio.channels.FileChannel;
 
 import java.util.Random;
 import java.util.HashMap;
@@ -65,6 +68,15 @@ public class AlignTest {
 
     @BeforeClass
     public static void setUpClass() {
+        try {
+            //truncate original output file
+            FileChannel outChan = new FileOutputStream(new File("/Users/anders/mu_bbmap/sams/original.sam"), true).getChannel();
+            outChan.truncate(0);
+            outChan.close();
+        } catch (IOException e) {
+            System.out.println("Could not truncate output file");
+        }
+
         //Create this mutant's reference input
         String[] original_args = {
             "in=" + BASE_DIR + "src/bbmap/resources/e_coli_1000.fq",
@@ -105,6 +117,16 @@ public class AlignTest {
             "build=1",
             "path=" + BASE_DIR + "src/bbmap",
             "threads=1"};
+
+        //truncate modified output file
+        try {
+            //truncate original output file
+            FileChannel outChan = new FileOutputStream(new File("/Users/anders/mu_bbmap/sams/modified.sam"), true).getChannel();
+            outChan.truncate(0);
+            outChan.close();
+        } catch (IOException e) {
+            System.out.println("Could not truncate output file");
+        }
 
         //Create comparison SAM
         BBMap.main(modified_args);
@@ -157,8 +179,9 @@ public class AlignTest {
             for (Object key : modified_map.keySet().toArray()) {
                 String original = original_map.get((String)key);
                 if ( (original == null) || (!original.equals(modified_map.get((String)key))) ) {
-                    System.out.println("Key " + key + " is " + modified_map.get((String)key) + " in modified, was " + original + " in original");
+                    //System.out.println("Key " + key + " is " + modified_map.get((String)key) + " in modified, was " + original + " in original");
                     pass = false;
+                    break;
                 }
             }
         } catch (Exception e) {
@@ -225,6 +248,7 @@ public class AlignTest {
             for (String val : modified_map.values()) {
                 if (Integer.valueOf(val).equals(0)) {
                     pass = false;
+                    break;
                 }
             }
         } catch (Exception e) {
@@ -291,6 +315,7 @@ public class AlignTest {
             for (String val : modified_map.values()) {
                 if (!Integer.valueOf(val).equals(0)) {
                     pass = false;
+                    break;
                 }
             }
         } catch (Exception e) {
@@ -345,6 +370,7 @@ public class AlignTest {
                 !modified_map.get(key).equals(modified_map.get(key + "v2"))) {
                 
                 pass = false;
+                break;
             }
         }
         return pass;
@@ -408,12 +434,13 @@ public class AlignTest {
         
         //mappings should all be the same
         if (original_map.size() != modified_map.size()) {
-            pass = false;
+            return false;
         }
 
         for (String key: original_map.keySet()) {
             if (!original_map.get(key).equals(modified_map.get(key))) {    
                 pass = false;
+                break;
             }
         }
         return pass;
