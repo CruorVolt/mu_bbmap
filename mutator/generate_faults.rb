@@ -6,6 +6,9 @@ require_relative 'mutant'
 @here = File.dirname(__FILE__)
 @results_dir = File.join( @here, "..", "result")
 @package = "bbmap.current.align2"
+@eclipse_bin = File.join( "~", "eclipse", "eclipse")
+@prefs_file = File.join(@here, "java_format.prefs")
+@classpath = File.join(@here, "..", "src", "bbmap", "current")
 
 #Reformat the source with eclipse
 #Scan the source file
@@ -19,14 +22,25 @@ end.parse!
 
 p ARGV
 
-#Uncomment for prod, file is set for now
-#%x(cp ~/mu_bbmap/src/bbmap/current/align2/BBMap.java ~/mu_bbmap/mutator/src/)
-#%x(~/eclipse/eclipse -application org.eclipse.jdt.core.JavaCodeFormatter -config ~/mu_bbmap/mutator/java_format.prefs ~/mu_bbmap/mutator/src/BBMap.java)
-
 def parse_dir(dir)
     Dir.foreach(dir) do |file|
-        parse_file File.join(dir, file) unless ((file == ".") or (file == ".."))
+        if !([".", ".."].include? file)
+            reformat_file File.join(dir, file)
+            parse_file File.join(dir, file)
+        end
     end
+end
+
+def reformat_file(full_path)
+    puts "#{@eclipse_bin} -application org.eclipse.jdt.core.JavaCodeFormatter -config #{@prefs_file} #{full_path}"
+    %x(#{@eclipse_bin} -application org.eclipse.jdt.core.JavaCodeFormatter -config #{@prefs_file} #{full_path})
+end
+
+def compile_java(full_path)
+    #compile
+    success = %x(javac -cp #{@classpath} #{full_path})
+    puts "#Compile result is: #{success}"
+    #change permissions
 end
 
 def parse_file(full_path)
@@ -73,6 +87,7 @@ def parse_file(full_path)
                 end
                 new_source.close
                 #compile the completed file
+                compile_java( File.join(new_dir, filename) )
             end
         end
         #write the method_list and mutant_log files as required
