@@ -33,6 +33,13 @@ def parse_dir(dir)
     end
 end
 
+def copy_original(full_path)
+    filename = File.split(full_path)[-1]
+    new_path =  File.join(@results_dir, "#{@package}.#{filename[0..-6]}", "original", filename)
+    FileUtils.copy(full_path, new_path)
+    compile_java(new_path)
+end
+
 def reformat_file(full_path)
     puts "#{@eclipse_bin} -application org.eclipse.jdt.core.JavaCodeFormatter -config #{@prefs_file} #{full_path}"
     system "#{@eclipse_bin} -application org.eclipse.jdt.core.JavaCodeFormatter -config #{@prefs_file} #{full_path}"
@@ -43,6 +50,12 @@ def compile_java(full_path)
     success = system "javac -cp #{@classpath} #{full_path} &> /dev/null"
     if success
         @good += 1
+    else
+        #Delete this dir and associated file
+        path_parts = File.split(full_path)
+        File::delete full_path
+        Dir::delete File.join(path_parts[0...-1])
+        puts "Deleted invalid mutant #{path_parts[-2]}"
     end
     @total += 1
     puts "Compiled #{@good} out of #{@total} source files"
@@ -58,6 +71,8 @@ def parse_file(full_path)
     new_src_dir = File.join( @results_dir, "#{@package}.#{filename[0..-6]}") #strip ".java" from file
     FileUtils::mkdir_p File.join(new_src_dir, "original")
     FileUtils::mkdir_p File.join(new_src_dir, "traditional_mutants", "all")
+
+    copy_original(full_path)
 
     File.open(full_path, "r") do |source|
 
