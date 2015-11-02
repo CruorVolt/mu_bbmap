@@ -3,13 +3,15 @@ require 'fileutils'
 
 require_relative 'mutant'
 
-@here = File.dirname(__FILE__)
+@here = File.expand_path(File.dirname(__FILE__))
 @results_dir = File.join( @here, "..", "result")
 @package = "bbmap.current.align2"
 @eclipse_bin = File.join( "~", "eclipse", "eclipse")
 @prefs_file = File.join(@here, "java_format.prefs")
 @classpath = File.join(@here, "..", "src", "bbmap", "current")
 
+@good = 0
+@total = 0
 #Reformat the source with eclipse
 #Scan the source file
     #make new copies of each faulty version and keep them in subdirectories here, not in the original source location
@@ -33,13 +35,17 @@ end
 
 def reformat_file(full_path)
     puts "#{@eclipse_bin} -application org.eclipse.jdt.core.JavaCodeFormatter -config #{@prefs_file} #{full_path}"
-    %x(#{@eclipse_bin} -application org.eclipse.jdt.core.JavaCodeFormatter -config #{@prefs_file} #{full_path})
+    system "#{@eclipse_bin} -application org.eclipse.jdt.core.JavaCodeFormatter -config #{@prefs_file} #{full_path}"
 end
 
 def compile_java(full_path)
     #compile
-    success = %x(javac -cp #{@classpath} #{full_path})
-    puts "#Compile result is: #{success}"
+    success = system "javac -cp #{@classpath} #{full_path} &> /dev/null"
+    if success
+        @good += 1
+    end
+    @total += 1
+    puts "Compiled #{@good} out of #{@total} source files"
     #change permissions
 end
 
@@ -97,4 +103,5 @@ end
 
 
 parse_dir(File.join(@here, "src"))
+puts "Compiled #{@good} out of #{@total}"
 
