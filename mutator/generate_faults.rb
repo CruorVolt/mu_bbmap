@@ -37,7 +37,7 @@ def parse_file(full_path)
     #ensure the correct directory structure exists for the results
     new_src_dir = File.join( @results_dir, "#{@package}.#{filename[0..-6]}") #strip ".java" from file
     FileUtils::mkdir_p File.join(new_src_dir, "original")
-    FileUtils::mkdir_p File.join(new_src_dir, "traditional_mutants")
+    FileUtils::mkdir_p File.join(new_src_dir, "traditional_mutants", "all")
 
     File.open(full_path, "r") do |source|
 
@@ -53,7 +53,29 @@ def parse_file(full_path)
         puts "New lines is an array of #{mutant_lines.length} maps"
         (0...mutant_lines.length).each do |index|
             new_dirs = mutant_lines[index].keys
+            mutant_lines[index].keys.each do |key|
+                mutant_line = mutant_lines[index][key] #each key is a new mutant file
+                #make a new directory for the mutant
+                    #dir structur: result/class_thing/traditional_mutants/ALL_FUNCS/AORB_345..etc
+                new_dir = File.join(new_src_dir, "traditional_mutants", "all", key)
+                FileUtils::mkdir_p new_dir
+                #make a new source file for the mutant
+                new_source = File.open( File.join(new_dir, filename), "w")
+                #write all the lines of the original source, replacing the mutated line
+                new_source.print "//This is an automatically generated faulty java program \n//Author: Anders Lundgren\n"
+                (0...original_lines.length).each do |o_index|
+                    if o_index == index #this is the modified line
+                        new_source.print "/*\nFault injected here\nOriginal line was: \n#{original_lines[o_index]}*/\n"
+                        new_source.print mutant_lines[index][key]
+                    else #write the original line
+                        new_source.print original_lines[o_index]
+                    end
+                end
+                new_source.close
+                #compile the completed file
+            end
         end
+        #write the method_list and mutant_log files as required
 
     end
 end
