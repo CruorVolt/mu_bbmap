@@ -1,5 +1,12 @@
+#Reformat the source with eclipse
+#Scan the source file
+    #make new copies of each faulty version and keep them in subdirectories here, not in the original source location
+#Make class files using -cp ORIGINAL_LOCATION
+#Move all the new source and binary files to the appropriate directory in /results/ so muJava can work with them
+
 require 'optparse'
 require 'fileutils'
+require 'shellwords'
 
 require_relative 'mutant'
 
@@ -9,14 +16,11 @@ require_relative 'mutant'
 @eclipse_bin = File.join( "~", "eclipse", "eclipse")
 @prefs_file = File.join(@here, "java_format.prefs")
 @classpath = File.join(@here, "..", "src", "bbmap", "current")
+@method_name = "void_method()"
+@mutation_log_suffix = ":1:#{@method_name}:original => modified"
 
 @good = 0
 @total = 0
-#Reformat the source with eclipse
-#Scan the source file
-    #make new copies of each faulty version and keep them in subdirectories here, not in the original source location
-#Make class files using -cp ORIGINAL_LOCATION
-#Move all the new source and binary files to the appropriate directory in /results/ so muJava can work with them
 
 OptionParser.new do |options|
     options.banner = "Usage: generate_faults.rb <file1> <file2> ... [options]"
@@ -47,8 +51,10 @@ end
 
 def compile_java(full_path)
     #compile
-    success = system "javac -cp #{@classpath} #{full_path} &> /dev/null"
+    success = system "javac -cp #{@classpath} #{Shellwords.escape full_path} &> /dev/null"
     if success
+        #Open the permission floodgates
+        #File::chmod(777, "#{full_path[0..-6]}.class")
         @good += 1
     else
         #Delete this dir and associated file
@@ -59,7 +65,7 @@ def compile_java(full_path)
     end
     @total += 1
     puts "Compiled #{@good} out of #{@total} source files"
-    #change permissions
+    success
 end
 
 def parse_file(full_path)
@@ -70,7 +76,16 @@ def parse_file(full_path)
     #ensure the correct directory structure exists for the results
     new_src_dir = File.join( @results_dir, "#{@package}.#{filename[0..-6]}") #strip ".java" from file
     FileUtils::mkdir_p File.join(new_src_dir, "original")
-    FileUtils::mkdir_p File.join(new_src_dir, "traditional_mutants", "all")
+    FileUtils::mkdir_p File.join(new_src_dir, "class_mutants")
+    FileUtils::mkdir_p File.join(new_src_dir, "traditional_mutants", @method_name)
+
+    #the mutation_log file lists all the created mutants and is read by the muJava GUI
+    mutation_log = File.open( File.join(new_src_dir, "traditional_mutants", "mutation_log"), "w")
+
+    #the method_list file will just hold our one fake method
+    method_list = File.open( File.join(new_src_dir, "traditional_mutants", "method_list"), "w") do |file| 
+        file.puts @method_name
+    end
 
     copy_original(full_path)
 
@@ -92,7 +107,7 @@ def parse_file(full_path)
                 mutant_line = mutant_lines[index][key] #each key is a new mutant file
                 #make a new directory for the mutant
                     #dir structur: result/class_thing/traditional_mutants/ALL_FUNCS/AORB_345..etc
-                new_dir = File.join(new_src_dir, "traditional_mutants", "all", key)
+                new_dir = File.join(new_src_dir, "traditional_mutants", @method_name, key)
                 FileUtils::mkdir_p new_dir
                 #make a new source file for the mutant
                 new_source = File.open( File.join(new_dir, filename), "w")
@@ -108,12 +123,14 @@ def parse_file(full_path)
                 end
                 new_source.close
                 #compile the completed file
-                compile_java( File.join(new_dir, filename) )
+                if (compile_java( File.join(new_dir, filename) ))
+                    mutation_log.puts "#{key}#{@mutation_log_suffix}"
+                end
             end
         end
         #write the method_list and mutant_log files as required
-
     end
+    mutation_log.close
 end
 
 
