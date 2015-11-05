@@ -169,15 +169,16 @@ public class AlignTest {
     }
 
     public static boolean removal_of_reads_post(String original_sam, String output_sam) {
+        System.out.println("\nRemoval of reads comparison");
         boolean pass = true;
+        int count = 0;
+        HashMap<String, String> original_map = build_sam_mapping(original_sam);
+        HashMap<String, String> modified_map = build_sam_mapping(output_sam);
         try {
-
-            HashMap<String, String> original_map = build_sam_mapping(original_sam);
-            HashMap<String, String> modified_map = build_sam_mapping(output_sam);
-
             //compare modified SAM
             for (Object key : modified_map.keySet().toArray()) {
                 String original = original_map.get((String)key);
+                count++;
                 if ( (original == null) || (!original.equals(modified_map.get((String)key))) ) {
                     //System.out.println("Key " + key + " is " + modified_map.get((String)key) + " in modified, was " + original + " in original");
                     pass = false;
@@ -187,6 +188,7 @@ public class AlignTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("Removal of reads compared " + count + " new mappings agains the original " + original_map.keySet().size() + " mappings and will return " + pass);
         return pass;
     }
 
@@ -240,12 +242,14 @@ public class AlignTest {
     }
 
     public static boolean mapped_reads_post(String original_sam, String output_sam) {
+        System.out.println("\nMapped reads comparison");
         boolean pass = true;
+        HashMap<String, String> modified_map = build_sam_mapping(output_sam);
         try {
-            HashMap<String, String> modified_map = build_sam_mapping(output_sam);
 
-            //modified sam should have no mappings
+            //modified sam should have only mappings
             for (String val : modified_map.values()) {
+                System.out.println( "\tThis shouldn't be zero: " + Integer.valueOf(val));
                 if (Integer.valueOf(val).equals(0)) {
                     pass = false;
                     break;
@@ -254,6 +258,7 @@ public class AlignTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("Mapped reads mapped " + modified_map.keySet().size() + " of the new reads and returns " + pass);
         return pass;
     }
 
@@ -307,12 +312,14 @@ public class AlignTest {
     }
 
     public static boolean unmapped_reads_post(String original_sam, String output_sam) {
+        System.out.println("Unmapped reads comparison");
         boolean pass = true;
+        HashMap<String, String> modified_map = build_sam_mapping(output_sam);
         try {
-            HashMap<String, String> modified_map = build_sam_mapping(output_sam);
 
             //modified sam should have no mappings
             for (String val : modified_map.values()) {
+                System.out.println("\tThis should be zero: " + Integer.valueOf(val));
                 if (!Integer.valueOf(val).equals(0)) {
                     pass = false;
                     break;
@@ -321,6 +328,7 @@ public class AlignTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("Unmapped reads mapped " + modified_map.keySet().size() + " reads and will return " + pass);
         return pass;
     }
 
@@ -361,6 +369,7 @@ public class AlignTest {
     }
 
     public static boolean addition_of_reads_post(String original_sam, String output_sam) {
+        System.out.println("Addition of reads comparison");
         boolean pass = true;
         HashMap<String, String> original_map = build_sam_mapping(original_sam);
         HashMap<String, String> modified_map = build_sam_mapping(output_sam);
@@ -373,6 +382,7 @@ public class AlignTest {
                 break;
             }
         }
+        System.out.println("Addition of reads compared the " + original_map.keySet().size() + " mappings against " + modified_map.keySet().size() + " modified mappings and will return " + pass);
         return pass;
     }
 
@@ -428,6 +438,7 @@ public class AlignTest {
     }
 
     public static boolean permutation_of_reads_post(String original_sam, String output_sam) {
+        System.out.println("Permutation of reads comparison");
         boolean pass = true;
         HashMap<String, String> original_map = build_sam_mapping(original_sam);
         HashMap<String, String> modified_map = build_sam_mapping(output_sam);
@@ -443,6 +454,7 @@ public class AlignTest {
                 break;
             }
         }
+        System.out.println("Permutation of reads tested whether the " + original_map.keySet().size() + " original mappings were identical to the " + modified_map.keySet().size() + " mappings and will return " + pass);
         return pass;
     }
 
