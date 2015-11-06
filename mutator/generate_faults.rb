@@ -1,9 +1,3 @@
-#Reformat the source with eclipse
-#Scan the source file
-    #make new copies of each faulty version and keep them in subdirectories here, not in the original source location
-#Make class files using -cp ORIGINAL_LOCATION
-#Move all the new source and binary files to the appropriate directory in /results/ so muJava can work with them
-
 require 'optparse'
 require 'fileutils'
 require 'shellwords'
@@ -12,7 +6,7 @@ require_relative 'mutant'
 
 @here = File.expand_path(File.dirname(__FILE__))
 @results_dir = File.join( @here, "..", "result")
-@package = "bbmap.current.align2"
+@package_prefix = "bbmap.current"
 @eclipse_bin = File.join( "~", "eclipse", "eclipse")
 @prefs_file = File.join(@here, "java_format.prefs")
 @classpath = File.join(@here, "..", "src", "bbmap", "current")
@@ -26,7 +20,14 @@ OptionParser.new do |options|
     options.banner = "Usage: generate_faults.rb <file1> <file2> ... [options]"
 end.parse!
 
-p ARGV
+def find_package(fullpath)
+    package = nil
+    File.open(full_path, "r").do |file|
+        # line of form "package xxxx;"
+        package = file.readline[8...-1]
+    end
+    package
+end
 
 def parse_dir(dir)
     Dir.foreach(dir) do |file|
@@ -39,7 +40,7 @@ end
 
 def copy_original(full_path)
     filename = File.split(full_path)[-1]
-    new_path =  File.join(@results_dir, "#{@package}.#{filename[0..-6]}", "original", filename)
+    new_path =  File.join(@results_dir, "#{@package_prefix}.#{find_package(full_path)}.#{filename[0..-6]}", "original", filename)
     FileUtils.copy(full_path, new_path)
     compile_java(new_path)
 end
@@ -74,7 +75,7 @@ def parse_file(full_path)
     puts "Parsing #{filename}"
 
     #ensure the correct directory structure exists for the results
-    new_src_dir = File.join( @results_dir, "#{@package}.#{filename[0..-6]}") #strip ".java" from file
+    new_src_dir = File.join( @results_dir, "#{@package_prefix}.#{find_package(full_path)}.#{filename[0..-6]}") #strip ".java" from file
     FileUtils::mkdir_p File.join(new_src_dir, "original")
     FileUtils::mkdir_p File.join(new_src_dir, "class_mutants")
     FileUtils::mkdir_p File.join(new_src_dir, "traditional_mutants", @method_name)
@@ -116,6 +117,7 @@ def parse_file(full_path)
                 (0...original_lines.length).each do |o_index|
                     if o_index == index #this is the modified line
                         new_source.print "/*\nFault injected here\nOriginal line was: \n#{original_lines[o_index]}*/\n"
+                        new_source.print "System.out.println(\"Fault executed. This mutant: #{key}\");\n"
                         new_source.print mutant_lines[index][key]
                     else #write the original line
                         new_source.print original_lines[o_index]
