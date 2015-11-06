@@ -20,11 +20,13 @@ OptionParser.new do |options|
     options.banner = "Usage: generate_faults.rb <file1> <file2> ... [options]"
 end.parse!
 
-def find_package(fullpath)
+def find_package(full_path)
+    puts "Looking for package for file: #{full_path}"
     package = nil
-    File.open(full_path, "r").do |file|
+    File.open(full_path, "r") do |file|
         # line of form "package xxxx;"
-        package = file.readline[8...-1]
+        package = file.readline()[8...-2]
+        puts "Package found: #{package}"
     end
     package
 end
@@ -55,17 +57,16 @@ def compile_java(full_path)
     success = system "javac -cp #{@classpath} #{Shellwords.escape full_path} &> /dev/null"
     if success
         #Open the permission floodgates
-        #File::chmod(777, "#{full_path[0..-6]}.class")
+        FileUtils::chmod("ugo=rwx", "#{full_path[0..-6]}.class")
         @good += 1
+        puts "Compiled #{@good} out of #{@total} source files"
     else
         #Delete this dir and associated file
         path_parts = File.split(full_path)
         File::delete full_path
         Dir::delete File.join(path_parts[0...-1])
-        puts "Deleted invalid mutant #{path_parts[-2]}"
     end
     @total += 1
-    puts "Compiled #{@good} out of #{@total} source files"
     success
 end
 
