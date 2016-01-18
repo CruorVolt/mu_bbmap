@@ -1,0 +1,3814 @@
+AlignTest
+
+
+======================================== Generating Original Test Results ========================================
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+
+
+======================================== Executing Mutants ========================================
+  AODU_10
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AODU_11
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AODU_12
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AODU_13Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AODU_14
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_15
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_16Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AODU_17
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_18
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_19Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AODU_20Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AODU_21
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_22
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_23
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AODU_24Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_25Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_26Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_27Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_28Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_29Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+  AODU_30Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AODU_31Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_32
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_33
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_34Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_35
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AODU_36Permutation of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_37
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_4
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+  AODU_5Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_6
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AODU_7
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AODU_8
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AODU_9Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+  AORB_100Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_101
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_102Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_103Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_104
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORB_105Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_106
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_107Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_108
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_117Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_118
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Permutation of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_119
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORB_120Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_129Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_130Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_131Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_132
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_161Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_162
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_163
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AORB_164
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  AORB_165Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_166
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_167Permutation of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+  AORB_168Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+
+Removal of reads comparison
+Unmapped reads mapped 0 reads and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_169Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_170
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_171
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_172Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_177
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+
+Mapped reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_178
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  AORB_179
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_180
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_181
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_182
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  AORB_183Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_184
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_189Permutation of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_190Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_191
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_192Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_193
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_194
+Mapped reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=time_out: more than 10000 milliseconds, test_unmapped_reads=time_out: more than 10000 milliseconds, test_removal_of_reads=time_out: more than 10000 milliseconds, test_permutation_of_reads=time_out: more than 10000 milliseconds, test_mapped_reads=time_out: more than 10000 milliseconds}
+  AORB_195
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_196
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Addition of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_197 time_out: more than 10000 milliseconds
+  AORB_198
+Mapped reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_199Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_200
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+
+Removal of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_201Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_202
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_203
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_204 time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_21Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Unmapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_22
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_23Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AORB_24Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Permutation of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORB_29Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_31Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_32
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_33Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+
+Mapped reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_34 time_out: more than 10000 milliseconds
+  AORB_35
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORB_36
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+  AORB_41Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_42
+Removal of reads comparison
+
+Mapped reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_43
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_44Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_45 time_out: more than 10000 milliseconds
+  AORB_47
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_48Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_49Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORB_50Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_51Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_52Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=time_out: more than 10000 milliseconds, test_unmapped_reads=time_out: more than 10000 milliseconds, test_removal_of_reads=time_out: more than 10000 milliseconds, test_permutation_of_reads=time_out: more than 10000 milliseconds, test_mapped_reads=time_out: more than 10000 milliseconds}
+  AORB_53Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_54Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_55Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_56Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_57 time_out: more than 10000 milliseconds
+  AORB_58
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AORB_59Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_60Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_61
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_62Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_63Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_64Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORB_69Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  AORB_70
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_71Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_72
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORB_73
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_75Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_76Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_77
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_78
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+
+Mapped reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_79
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORB_80
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_89Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORB_90Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_91Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+
+Removal of reads comparison
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  AORB_92Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_93
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_94Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORB_95Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_96Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORB_97Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_98Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORB_99
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 612 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORS_1
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_10 time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+  AORS_100Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_105
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_106
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_107
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_108Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_11
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORS_113Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_114Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_115Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORS_116
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_117Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORS_118Addition of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_119
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_12
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_120
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AORS_121Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  AORS_122
+Mapped reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_123Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_124Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_129Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_130
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_131Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_132
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_137
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_138
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORS_139
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+Permutation of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_140
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORS_141
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_142 time_out: more than 10000 milliseconds
+  AORS_143
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_144
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_17Permutation of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_18
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_19
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_2
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_20Permutation of reads comparison
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_25
+Removal of reads comparison
+
+Mapped reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_26
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_27
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_28
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_3
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_33Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_34Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_35
+Removal of reads comparison
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_36Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_4
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_41Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORS_42
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_43Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+
+Removal of reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_44Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_49
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_50
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_51Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_52
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  AORS_57Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  AORS_58Could not truncate output file
+
+Mapped reads comparison
+Permutation of reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_59Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+
+Removal of reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_60Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_65Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_66Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORS_67
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_68Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_73
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORS_74Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_75
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_76Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+  AORS_77Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_78Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_79
+Removal of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AORS_80Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_81
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_82Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_83
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Permutation of reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  AORS_84
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_85
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORS_86Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_87Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  AORS_88Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_89
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_9
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_90
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORS_91
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_92
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+
+Removal of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_93Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_94
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_95Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORS_96Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORS_97
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORS_98Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORS_99
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_1
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORU_10Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORU_11
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORU_12Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Addition of reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORU_13Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_14Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORU_15Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_16Addition of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_17Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORU_18
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Permutation of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  AORU_19
+Removal of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_2
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_20Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+  AORU_21Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORU_22Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+
+Mapped reads comparison
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+Mapped reads mapped 0 of the new reads and returns true
+  AORU_23
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORU_24Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_25
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_26Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_27Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_28
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+  AORU_29
+Removal of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORU_3Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_30 time_out: more than 10000 milliseconds
+  AORU_31Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_32Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_33Permutation of reads comparison
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_34Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORU_35Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORU_36Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_37
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  AORU_4
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_5 time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  AORU_6Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  AORU_7
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  AORU_8
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  AORU_9
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COD_1Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COD_10
+Removal of reads comparison
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COD_13Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COD_14
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COD_20
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COD_21Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COD_22Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COD_23
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COD_24Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COD_25Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COD_33
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  COD_7
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COD_9
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_1Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_10
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_100Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_101
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_102Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_103Permutation of reads comparison
+
+Mapped reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  COR_104
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  COR_105Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_106
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_107
+Mapped reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_108Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  COR_109Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_11Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_110
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+
+Mapped reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_111Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_112
+Mapped reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_113
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_114
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_115
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+
+Removal of reads comparison
+Unmapped reads mapped 0 reads and will return true
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_116Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_117
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  COR_118Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+
+Mapped reads comparison
+Addition of reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_119Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_12
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_120
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  COR_121
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_122Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_123Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  COR_124
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_125
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+  COR_126{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_127Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  COR_128
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_129
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_13 time_out: more than 10000 milliseconds
+  COR_130
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_131
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_132Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  COR_133
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_134Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  COR_135Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_136Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_137
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  COR_138Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  COR_139Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_14Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  COR_140Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_141
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_142
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_143Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_144Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=time_out: more than 10000 milliseconds, test_unmapped_reads=time_out: more than 10000 milliseconds, test_removal_of_reads=time_out: more than 10000 milliseconds, test_permutation_of_reads=time_out: more than 10000 milliseconds, test_mapped_reads=time_out: more than 10000 milliseconds}
+  COR_145Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_146
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_147Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_148Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_149Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  COR_15
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_150
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_151Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_152
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_153Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  COR_154
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_155
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_156Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_157Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_158
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_159
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  COR_16
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+
+Mapped reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_160Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  COR_161Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_162
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  COR_163Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_164
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  COR_165Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_166Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_167
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_168Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_169
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_17
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_170Permutation of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_171Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_172Permutation of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Addition of reads comparison
+  COR_18Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_19Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_2Permutation of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_20Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_21
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_22
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_23
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  COR_24 time_out: more than 10000 milliseconds
+  COR_25
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_26
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+  COR_27
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_28
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_29Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_3
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_30
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  COR_31
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_32
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_33
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_34Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_35
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_36Permutation of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_37Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_38Permutation of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_39
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_4Permutation of reads comparison
+
+Mapped reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_40Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_41
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  COR_42
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_43Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_44Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_45
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  COR_46
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_47 time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  COR_48Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_49
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_5
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_50Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_51
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_52Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_53Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_54Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_55
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_56Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_57Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_58Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_59
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_6
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_60
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_61
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_62
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_63
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_64Permutation of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+  COR_65Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+
+Removal of reads comparison
+Unmapped reads mapped 0 reads and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_66
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_67 time_out: more than 10000 milliseconds
+  COR_68Permutation of reads comparison
+Permutation of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_69Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_7
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  COR_70Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_71
+Mapped reads comparison
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_72
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  COR_73Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_74
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_75Permutation of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=time_out: more than 10000 milliseconds, test_unmapped_reads=time_out: more than 10000 milliseconds, test_removal_of_reads=time_out: more than 10000 milliseconds, test_permutation_of_reads=time_out: more than 10000 milliseconds, test_mapped_reads=time_out: more than 10000 milliseconds}
+  COR_76
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_77
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_78Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Permutation of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+  COR_79Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  COR_8Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+Permutation of reads comparison
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  COR_80 time_out: more than 10000 milliseconds
+  COR_81
+Removal of reads comparison
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  COR_82Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_83
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_84Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_85
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+  COR_86Removal of reads compared 0 new mappings agains the original 931 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_87
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_88
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_89Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  COR_9
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  COR_90
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_91Permutation of reads comparison
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 732 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_92
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_93Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_94Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Addition of reads comparison
+  COR_95Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  COR_96
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  COR_97Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  COR_98Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+  COR_99
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  LOD_1Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_10
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_100
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  ROR_101Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  ROR_102
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_103
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_104Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_105
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_106
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_107
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_108Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  ROR_109
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_110Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_111
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_112
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  ROR_113Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_114Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  ROR_115Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_116
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  ROR_117
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_118Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_119Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_120
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  ROR_121Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_122
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  ROR_123Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_124
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+  ROR_125Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_126
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_127Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_128Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+  ROR_129Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  ROR_130
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_135
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_136Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  ROR_137
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_138Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  ROR_139
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_140Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_141
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  ROR_142
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_143
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  ROR_144
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_145 time_out: more than 10000 milliseconds
+  ROR_15Permutation of reads comparison
+
+Removal of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+ time_out: more than 10000 milliseconds
+  ROR_150 time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  ROR_155Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_16
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_160Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_165
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_17
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_170
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 732 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_175
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_18Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_180
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_185Unmapped reads comparison
+
+Mapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_19
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  ROR_190
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_195Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_20
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_200Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_201Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+
+Mapped reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_202Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_203
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  ROR_204Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_205
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_206Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+  ROR_207Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_208Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_209
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 1000 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_21 time_out: more than 10000 milliseconds
+  ROR_210
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_215Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_216
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_217Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Permutation of reads comparison
+
+Mapped reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_218
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Addition of reads comparison
+Addition of reads compared the 1000 mappings against 0 modified mappings and will return false
+{test_addition_of_reads=test_addition_of_reads: 63; Addition of Reads Failure!, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_219
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_22Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_220
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=test_permutation_of_reads: 81; Permutation of Reads Failure!, test_mapped_reads=pass}
+  ROR_225Permutation of reads comparison
+ time_out: more than 10000 milliseconds
+  ROR_226
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
+Unmapped reads comparison
+Unmapped reads mapped 0 reads and will return true
+
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+ time_out: more than 10000 milliseconds
+  ROR_227
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+  ROR_228Addition of reads comparison
+Addition of reads compared the 0 mappings against 0 modified mappings and will return true
+{test_addition_of_reads=pass, test_unmapped_reads=pass, test_removal_of_reads=pass, test_permutation_of_reads=pass, test_mapped_reads=pass}
+  ROR_229
+Mapped reads comparison
+Mapped reads mapped 0 of the new reads and returns true
+ time_out: more than 10000 milliseconds
+Permutation of reads comparison
+Permutation of reads tested whether the 0 original mappings were identical to the 0 mappings and will return true
+  ROR_23
+Removal of reads comparison
+Removal of reads compared 0 new mappings agains the original 0 mappings and will return true
